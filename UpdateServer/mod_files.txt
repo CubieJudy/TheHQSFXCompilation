@@ -1,11 +1,11 @@
-ModConfig/S1\Genesis (VGM)\raw\sound\STH1_sfx.acb
-ModConfig/S1\Mobile\raw\sound\STH1_sfx.acb
-ModConfig/SCD\SEGA CD\raw\sound\SCD_sfx.acb
-ModConfig/SCD\SEGA CD (Ultrafix Compatible)\raw\sound\SCD_sfx.acb
-ModConfig/SCD\Mobile\raw\sound\SCD_sfx.acb
-ModConfig/S2\Genesis (VGM)\raw\sound\STH2_sfx.acb
-ModConfig/S2\Mobile\raw\sound\STH2_sfx.acb
-ModConfig/S3&K\Genesis (VGM)\raw\sound\STH3_sfx.acb
-mod.ini
-mod.json
-sfxcustomizer.hmm
+add ModConfig/S1\Genesis (VGM)\raw\sound\STH1_sfx.acb
+add ModConfig/S1\Mobile\raw\sound\STH1_sfx.acb
+add ModConfig/SCD\SEGA CD\raw\sound\SCD_sfx.acb
+add ModConfig/SCD\SEGA CD (Ultrafix Compatible)\raw\sound\SCD_sfx.acb
+add ModConfig/SCD\Mobile\raw\sound\SCD_sfx.acb
+add ModConfig/S2\Genesis (VGM)\raw\sound\STH2_sfx.acb
+add ModConfig/S2\Mobile\raw\sound\STH2_sfx.acb
+add ModConfig/S3&K\Genesis (VGM)\raw\sound\STH3_sfx.acb
+add mod.ini
+add mod.json
+add sfxcustomizer.hmm
