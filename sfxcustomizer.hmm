@@ -1,0 +1,144 @@
+Code "The HQ SFX Compilation" by "Cubie Judy"
+//
+    #lib "HMM"
+    #lib "INI"
+    #lib "AudioRedirection"
+
+    static bool IsConfigInitialised = false;
+
+    static int Jump1 = 0;
+    static int JumpCD = 0;
+    static int Jump2 = 0;
+    static int Jump3K = 0;
+    static int Skid1 = 0;
+    static int SkidCD = 0;
+    static int Skid2 = 0;
+    static int Skid3K = 0;
+    static int Charge1 = 0;
+    static int ChargeCD = 0;
+    static int Charge2 = 0;
+    static int Charge3K = 0;
+    static int LightningShield1 = 0;
+    static int LightningShieldCD = 0;
+    static int LightningShield2 = 0;
+    static int LightningShield3K = 0;
+//
+{
+    if (!IsConfigInitialised)
+    {
+        var modsQuery = HMM.FindModsByName("The HQ SFX Compilation");
+
+        if (modsQuery.Count == 1)
+        {
+            string modConfigIniPath = System.IO.Path.Combine(modsQuery[0].Path, "mod.ini");
+            var ini = INI.Read(modConfigIniPath);
+
+            Jump1 = INI.Parse<int>(ini["Jump"]["Jump S1"], Jump1);
+            JumpCD = INI.Parse<int>(ini["Jump"]["Jump SCD"], JumpCD);
+            Jump2 = INI.Parse<int>(ini["Jump"]["Jump S2"], Skid2);
+            Jump3K = INI.Parse<int>(ini["Jump"]["Jump S3K"], Jump3K);
+            Skid1 = INI.Parse<int>(ini["Skid"]["Skid S1"], Skid1);
+            SkidCD = INI.Parse<int>(ini["Skid"]["Skid SCD"], SkidCD);
+            Skid2 = INI.Parse<int>(ini["Skid"]["Skid S2"], Skid2);
+            Skid3K = INI.Parse<int>(ini["Skid"]["Skid S3K"], Skid3K);
+            Charge1 = INI.Parse<int>(ini["Charge"]["Charge S1"], Charge1);
+            ChargeCD = INI.Parse<int>(ini["Charge"]["Charge SCD"], ChargeCD);
+            Charge2 = INI.Parse<int>(ini["Charge"]["Charge S2"], Charge2);
+            Charge3K = INI.Parse<int>(ini["Charge"]["Charge S3K"], Charge3K);
+            LightningShield1 = INI.Parse<int>(ini["LightningShield"]["Lightning Shield S1"], LightningShield1);
+            LightningShieldCD = INI.Parse<int>(ini["LightningShield"]["Lightning Shield SCD"], LightningShieldCD);
+            LightningShield2 = INI.Parse<int>(ini["LightningShield"]["Lightning Shield S2"], LightningShield2);
+            LightningShield3K = INI.Parse<int>(ini["LightningShield"]["Lightning Shield S3K"], LightningShield3K);
+        }
+        else
+        {
+            // your mod isn't present in the active mods list or has duplicates, so you did something wrong.
+        }
+
+        IsConfigInitialised = true;
+    }
+
+        // JumpSFX (Default: Genesis) (Default CD: SEGA CD)
+    if (Jump1 == 1) // SEGA CD
+    {
+        AudioRedirection.AddSoundReplacement(RSDK.Game.Sonic1, "Global/Jump", "SFX_SCD_F02_Jump");
+    }
+
+        if (JumpCD == 0) // Genesis
+    {
+        AudioRedirection.AddSoundReplacement(RSDK.Game.SonicCD, "Global/Jump", "SFX_A0_Jump");
+    }
+
+        if (Jump2 == 1) // SEGA CD
+    {
+        AudioRedirection.AddSoundReplacement(RSDK.Game.Sonic2, "Global/Jump", "SFX_SCD_F02_Jump");
+    }
+
+        if (Jump3K == 1) // SEGA CD
+    {
+        AudioRedirection.AddSoundReplacement(RSDK.Game.Sonic3k, "Global/Jump", "SFX_SCD_F02_Jump");
+    }
+
+        // SkidSFX (Default: Genesis) (Default CD: SEGA CD)
+    if (Skid1 == 1) // SEGA CD
+    {
+        AudioRedirection.AddSoundReplacement(RSDK.Game.Sonic1, "Global/Skidding", "SFX_SCD_F00_Skidding");
+    }
+
+        if (SkidCD == 0) // Genesis
+    {
+        AudioRedirection.AddSoundReplacement(RSDK.Game.SonicCD, "Global/Skidding", "SFX_A4_Skidding");
+    }
+
+        if (Skid2 == 1) // SEGA CD
+    {
+        AudioRedirection.AddSoundReplacement(RSDK.Game.Sonic2, "Global/Skidding", "SFX_SCD_F00_Skidding");
+    }
+
+        if (Skid3K == 1) // SEGA CD
+    {
+        AudioRedirection.AddSoundReplacement(RSDK.Game.Sonic3k, "Global/Skidding", "SFX_SCD_F00_Skidding");
+    }
+
+            // ChargeSFX (Default: Genesis) (Default CD: SEGA CD)
+    if (Charge1 == 1) // SEGA CD
+    {
+        AudioRedirection.AddSoundReplacement(RSDK.Game.Sonic1, "Global/Charge", "SFX_SCD_F11_Charge");
+    }
+
+        if (ChargeCD == 0) // Genesis
+    {
+        AudioRedirection.AddSoundReplacement(RSDK.Game.SonicCD, "Global/Charge", "S120_SAB_Charge");
+    }
+
+        if (Charge2 == 1) // SEGA CD
+    {
+        AudioRedirection.AddSoundReplacement(RSDK.Game.Sonic2, "Global/Charge", "SFX_SCD_F11_Charge");
+    }
+
+        if (Charge3K == 1) // SEGA CD
+    {
+        AudioRedirection.AddSoundReplacement(RSDK.Game.Sonic3k, "Global/Charge", "SFX_SCD_F11_Charge");
+    }
+
+    // LightningShieldSFX (Default: S3&K)
+    if (LightningShield1 == 1) // Prototype
+    {
+        AudioRedirection.AddSoundReplacement(RSDK.Game.Sonic1, "Global/LightningShield", "S013_S40_");
+    }
+
+        if (LightningShieldCD == 1) // Prototype
+    {
+        AudioRedirection.AddSoundReplacement(RSDK.Game.SonicCD, "Global/LightningShield", "S013_S40_");
+    }
+
+        if (LightningShield2 == 1) // Prototype
+    {
+        AudioRedirection.AddSoundReplacement(RSDK.Game.Sonic2, "Global/LightningShield", "S013_S40_");
+    }
+
+        if (LightningShield3K == 1) // Prototype
+    {
+        AudioRedirection.AddSoundReplacement(RSDK.Game.Sonic3k, "Global/LightningShield", "S013_S40_");
+    }
+}

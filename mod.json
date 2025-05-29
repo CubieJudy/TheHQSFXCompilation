@@ -1,0 +1,413 @@
+{
+  "Groups": [
+    {
+      "Name": "Main",
+      "DisplayName": "SFX",
+      "Elements": [
+        {
+          "Name": "IncludeDir0",
+          "Description": [
+            "Switch between the various SFX options for Sonic 1."
+          ],
+          "DisplayName": "Sonic 1",
+          "Type": "Sonic1Enum",
+          "MinValue": null,
+          "MaxValue": null,
+          "DefaultValue": ".\\ModConfig\\S1\\Genesis (VGM)\\"
+        },
+        {
+          "Name": "IncludeDir1",
+          "Description": [
+            "Switch between the various SFX options for Sonic CD."
+          ],
+          "DisplayName": "Sonic CD",
+          "Type": "SonicCDEnum",
+          "MinValue": null,
+          "MaxValue": null,
+          "DefaultValue": ".\\ModConfig\\SCD\\SEGA CD\\"
+        },
+        {
+          "Name": "IncludeDir2",
+          "Description": [
+            "Switch between the various SFX options for Sonic 2."
+          ],
+          "DisplayName": "Sonic 2",
+          "Type": "Sonic2Enum",
+          "MinValue": null,
+          "MaxValue": null,
+          "DefaultValue": ".\\ModConfig\\S2\\Genesis (VGM)\\"
+        },
+        {
+          "Name": "IncludeDir3",
+          "Description": [
+            "Switch between the various SFX options for Sonic 3&K!"
+          ],
+          "DisplayName": "Sonic 3 & Knuckles",
+          "Type": "Sonic3Enum",
+          "MinValue": null,
+          "MaxValue": null,
+          "DefaultValue": ".\\ModConfig\\S3&K\\Genesis (VGM)\\"
+        }
+      ]
+    },
+    {
+      "Name": "Jump",
+      "DisplayName": "Jump SFX Customization",
+      "Elements": [
+        {
+          "Name": "Jump S1",
+          "Description": [
+            "Switch between the Genesis or SEGA CD Jump SFX for Sonic 1."
+          ],
+          "DisplayName": "Jump (Sonic 1)",
+          "Type": "JumpEnum",
+          "MinValue": null,
+          "MaxValue": null,
+          "DefaultValue": 0
+        },
+        {
+          "Name": "Jump SCD",
+          "Description": [
+            "Switch between the Genesis or SEGA CD Jump SFX for Sonic CD."
+          ],
+          "DisplayName": "Jump (Sonic CD)",
+          "Type": "JumpEnum",
+          "MinValue": null,
+          "MaxValue": null,
+          "DefaultValue": 1
+        },
+        {
+          "Name": "Jump S2",
+          "Description": [
+            "Switch between the Genesis or SEGA CD Jump SFX for Sonic 2."
+          ],
+          "DisplayName": "Jump (Sonic 2)",
+          "Type": "JumpEnum",
+          "MinValue": null,
+          "MaxValue": null,
+          "DefaultValue": 0
+        },
+        {
+          "Name": "Jump S3K",
+          "Description": [
+            "Switch between the Genesis or SEGA CD Jump SFX for Sonic 3&K."
+          ],
+          "DisplayName": "Jump (Sonic 3&K)",
+          "Type": "JumpEnum",
+          "MinValue": null,
+          "MaxValue": null,
+          "DefaultValue": 0
+        }
+      ]
+    },
+    {
+      "Name": "Skid",
+      "DisplayName": "Skid SFX Customization",
+      "Elements": [
+        {
+          "Name": "Skid S1",
+          "Description": [
+            "Switch between the Genesis or SEGA CD Skid SFX for Sonic 1."
+          ],
+          "DisplayName": "Skid (Sonic 1)",
+          "Type": "SkidEnum",
+          "MinValue": null,
+          "MaxValue": null,
+          "DefaultValue": 0
+        },
+        {
+          "Name": "Skid SCD",
+          "Description": [
+            "Switch between the Genesis or SEGA CD Skid SFX for Sonic CD."
+          ],
+          "DisplayName": "Skid (Sonic CD)",
+          "Type": "SkidEnum",
+          "MinValue": null,
+          "MaxValue": null,
+          "DefaultValue": 1
+        },
+        {
+          "Name": "Skid S2",
+          "Description": [
+            "Switch between the Genesis or SEGA CD Skid SFX for Sonic 2."
+          ],
+          "DisplayName": "Skid (Sonic 2)",
+          "Type": "SkidEnum",
+          "MinValue": null,
+          "MaxValue": null,
+          "DefaultValue": 0
+        },
+        {
+          "Name": "Skid S3K",
+          "Description": [
+            "Switch between the Genesis or SEGA CD Skid SFX for Sonic 3&K."
+          ],
+          "DisplayName": "Skid (Sonic 3&K)",
+          "Type": "SkidEnum",
+          "MinValue": null,
+          "MaxValue": null,
+          "DefaultValue": 0
+        }
+      ]
+    },
+    {
+      "Name": "Charge",
+      "DisplayName": "Charge SFX Customization",
+      "Elements": [
+        {
+          "Name": "Charge S1",
+          "Description": [
+            "Switch between the Genesis or SEGA CD Charge SFX for Sonic 1."
+          ],
+          "DisplayName": "Charge (Sonic 1)",
+          "Type": "ChargeEnum",
+          "MinValue": null,
+          "MaxValue": null,
+          "DefaultValue": 0
+        },
+        {
+          "Name": "Charge SCD",
+          "Description": [
+            "Switch between the Genesis or SEGA CD Charge SFX for Sonic CD."
+          ],
+          "DisplayName": "Charge (Sonic CD)",
+          "Type": "ChargeEnum",
+          "MinValue": null,
+          "MaxValue": null,
+          "DefaultValue": 1
+        },
+        {
+          "Name": "Charge S2",
+          "Description": [
+            "Switch between the Genesis or SEGA CD Charge SFX for Sonic 2."
+          ],
+          "DisplayName": "Charge (Sonic 2)",
+          "Type": "ChargeEnum",
+          "MinValue": null,
+          "MaxValue": null,
+          "DefaultValue": 0
+        },
+        {
+          "Name": "Charge S3K",
+          "Description": [
+            "Switch between the Genesis or SEGA CD Charge SFX for Sonic 3&K."
+          ],
+          "DisplayName": "Charge (Sonic 3&K)",
+          "Type": "ChargeEnum",
+          "MinValue": null,
+          "MaxValue": null,
+          "DefaultValue": 0
+        }
+      ]
+    },
+    {
+      "Name": "LightningShield",
+      "DisplayName": "Lightning Shield SFX Customization",
+      "Elements": [
+        {
+          "Name": "Lightning Shield S1",
+          "Description": [
+            "Switch between the Unused or S3&K Lightning Shield Sound for Sonic 1."
+          ],
+          "DisplayName": "Lightning Shield (Sonic 1)",
+          "Type": "LightningShieldEnum",
+          "MinValue": null,
+          "MaxValue": null,
+          "DefaultValue": 0
+        },
+        {
+          "Name": "Lightning Shield SCD",
+          "Description": [
+            "Switch between the Unused or S3&K Lightning Shield Sound for Sonic CD."
+          ],
+          "DisplayName": "Lightning Shield (Sonic CD) - (Needs Ultrafix)",
+          "Type": "LightningShieldEnum",
+          "MinValue": null,
+          "MaxValue": null,
+          "DefaultValue": 0
+        },
+        {
+          "Name": "Lightning Shield S2",
+          "Description": [
+            "Switch between the Unused or S3&K Lightning Shield Sound for Sonic 2."
+          ],
+          "DisplayName": "Lightning Shield (Sonic 2)",
+          "Type": "LightningShieldEnum",
+          "MinValue": null,
+          "MaxValue": null,
+          "DefaultValue": 0
+        },
+        {
+          "Name": "Lightning Shield S3K",
+          "Description": [
+            "Switch between the Unused or S3&K Lightning Shield Sound for Sonic 3&K."
+          ],
+          "DisplayName": "Lightning Shield (Sonic 3&K)",
+          "Type": "LightningShieldEnum",
+          "MinValue": null,
+          "MaxValue": null,
+          "DefaultValue": 0
+        }
+      ]
+    }
+  ],
+  "Enums": {
+    "Sonic1Enum": [
+      {
+        "DisplayName": "Genesis (VGM)",
+        "Value": ".\\ModConfig\\S1\\Genesis (VGM)\\",
+        "Description": [
+          "Uses VGM renders of the SFX from the original 1991 Sonic The Hedgehog (Genesis)."
+        ]
+      },
+      {
+        "DisplayName": "Mobile",
+        "Value": ".\\ModConfig\\S1\\Mobile\\",
+        "Description": [
+          "Uses the SFX from the 2013 Mobile Remaster of Sonic The Hedgehog."
+        ]
+      },
+      {
+        "DisplayName": "Origins",
+        "Value": ".\\ModConfig\\S1\\Origins\\",
+        "Description": [
+          "Uses the default SFX for Sonic 1 from Sonic Origins (Plus)."
+        ]
+      }
+    ],
+    "SonicCDEnum": [
+      {
+        "DisplayName": "SEGA CD",
+        "Value": ".\\ModConfig\\SCD\\SEGA CD\\",
+        "Description": [
+          "Uses VGM renders/audio rips of the SFX from the original 1993 Sonic CD."
+        ]
+      },
+      {
+        "DisplayName": "SEGA CD (Ultrafix Compatible)",
+        "Value": ".\\ModConfig\\SCD\\SEGA CD (Ultrafix Compatible)\\",
+        "Description": [
+          "Uses VGM renders/audio rips of the SFX from the original 1993 Sonic CD, retrofitted to be compatible with Sonic Origins Ultrafix."
+        ]
+      },
+      {
+        "DisplayName": "Mobile",
+        "Value": ".\\ModConfig\\SCD\\Mobile\\",
+        "Description": [
+          "Uses the SFX from the 2011 Mobile Remaster of Sonic CD."
+        ]
+      },
+      {
+        "DisplayName": "Origins",
+        "Value": ".\\ModConfig\\SCD\\Origins\\",
+        "Description": [
+          "Uses the default SFX for Sonic CD from Sonic Origins (Plus)."
+        ]
+      }
+    ],
+    "Sonic2Enum": [
+      {
+        "DisplayName": "Genesis (VGM)",
+        "Value": ".\\ModConfig\\S2\\Genesis (VGM)\\",
+        "Description": [
+          "Uses VGM renders of the SFX from the original 1992 Sonic The Hedgehog 2 (Genesis)."
+        ]
+      },
+      {
+        "DisplayName": "Mobile",
+        "Value": ".\\ModConfig\\S2\\Mobile\\",
+        "Description": [
+          "Uses the SFX from the 2013 Mobile Remaster of Sonic The Hedgehog 2."
+        ]
+      },
+      {
+        "DisplayName": "Origins",
+        "Value": ".\\ModConfig\\S2\\Origins\\",
+        "Description": [
+          "Uses the default SFX for Sonic 2 from Sonic Origins (Plus)."
+        ]
+      }
+    ],
+    "Sonic3Enum": [
+      {
+        "DisplayName": "Genesis (VGM)",
+        "Value": ".\\ModConfig\\S3&K\\Genesis (VGM)\\",
+        "Description": [
+          "Uses VGM renders of the SFX from Sonic 3 & Knuckles."
+        ]
+      },
+      {
+        "DisplayName": "Origins",
+        "Value": ".\\ModConfig\\S3&K\\Origins\\",
+        "Description": [
+          "Uses the default SFX for Sonic 3 & Knuckles from Sonic Origins (Plus)."
+        ]
+      }
+    ],
+    "JumpEnum": [
+      {
+        "DisplayName": "Genesis",
+        "Value": 0,
+        "Description": [
+          "Uses SEGA Genesis Jump SFX SFX."
+        ]
+      },
+      {
+        "DisplayName": "SEGA CD",
+        "Value": 1,
+        "Description": [
+          "Uses the SEGA CD Jump SFX"
+        ]
+      }
+    ],
+    "SkidEnum": [
+      {
+        "DisplayName": "Genesis",
+        "Value": 0,
+        "Description": [
+          "Uses SEGA Genesis Skid SFX SFX."
+        ]
+      },
+      {
+        "DisplayName": "SEGA CD",
+        "Value": 1,
+        "Description": [
+          "Uses the SEGA CD Skid SFX"
+        ]
+      }
+    ],
+    "ChargeEnum": [
+      {
+        "DisplayName": "Genesis",
+        "Value": 0,
+        "Description": [
+          "Uses SEGA Genesis Charge SFX SFX."
+        ]
+      },
+      {
+        "DisplayName": "SEGA CD",
+        "Value": 1,
+        "Description": [
+          "Uses the SEGA CD Charge SFX"
+        ]
+      }
+    ],
+    "LightningShieldEnum": [
+      {
+        "DisplayName": "S3&K",
+        "Value": 0,
+        "Description": [
+          "Uses OG Lightning Shield SFX."
+        ]
+      },
+      {
+        "DisplayName": "Unused/Generations",
+        "Value": 1,
+        "Description": [
+          "Uses the unused Lightning Shield SFX from S3&K, which was later used in Generations"
+        ]
+      }
+    ]
+  },
+      "IniFile": "mod.ini"
+    }
