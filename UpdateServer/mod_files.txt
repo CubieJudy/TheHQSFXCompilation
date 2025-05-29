@@ -1,0 +1,4 @@
+ModConfig/
+mod.ini
+mod.json
+sfxcustomizer.hmm
